@@ -7,6 +7,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        'auth-background': "url('/images/auth-bg3.jpg')"
+      }
     },
   },
   plugins: [],
