@@ -43,9 +43,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} bg-auth-background bg-no-repeat bg-cover lg:bg-center h-screen px-6 flex items-center justify-center`}>
-        {children}
-        </body>
+      <body className={inter.className}>{children}</body>
     </html>
   );
 }
