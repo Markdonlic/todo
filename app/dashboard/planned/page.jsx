@@ -6,9 +6,9 @@ import { CiViewList } from "react-icons/ci";
 
 export default function page() {
   return (
-    <div className="w-full md:max-w-7xl mx-auto">
-      <div className="flex w-full flex-col gap-4">
+    <div className="w-full mx-auto">
         <PageMenu title="Planned" icon={<CiViewList />} />
+      <div className="px-4 pt-2 flex w-full flex-col gap-4">
         <AddTask />
         <Folder name="Today" />
       </div>
