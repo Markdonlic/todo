@@ -11,7 +11,7 @@ export default function Home() {
     <div className="bg-auth-background bg-no-repeat bg-cover lg:bg-center h-screen px-6 flex items-center justify-center">
       <div className="w-full max-w-[34rem] p-8">
         <div className="w-full flex flex-col gap-8">
-          <div className="w-full flex lg:justify-end">
+          <div className="w-full flex lg:justify-end text-sm sm:text-base">
             <p className="text-neutral-600 font-semibold capitalize">
               new user?{" "}
               <span className="text-sky-700 hover:underline hover:underline-offset-4 hover:text-neutral-800 transition-all duration-500">
@@ -41,7 +41,7 @@ export default function Home() {
           <form className="flex flex-col gap-4">
             <TextField name="email" placeholder="Email" type="email" />
             <TextField name="password" placeholder="Password" type="password" />
-            <div className="flex justify-between items-center">
+            <div className="flex justify-between items-center text-sm sm:text-base">
               <CheckBox
                 id="stay-signed-in"
                 label="Keep me signed in"

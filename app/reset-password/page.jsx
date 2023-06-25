@@ -10,7 +10,7 @@ export default function ResetPassword() {
     <div className="bg-auth-background bg-no-repeat bg-cover lg:bg-center h-screen px-6 flex items-center justify-center">
       <div className="w-full max-w-[34rem] p-8">
         <div className="w-full flex flex-col gap-8">
-          <div className="w-full flex lg:justify-end">
+          <div className="w-full flex lg:justify-end text-sm sm:text-base">
             <p className="text-neutral-600 font-semibold capitalize">
               Already a user?{" "}
               <span className="text-sky-700 font-semibold hover:underline hover:underline-offset-4 hover:text-neutral-800 transition-all duration-500">

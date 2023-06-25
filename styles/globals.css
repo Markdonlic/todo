@@ -26,4 +26,6 @@ body {
     rgb(var(--background-start-rgb)); */
   margin: 0px;
   padding: 0px;
+  background-color: rgb(243, 244, 246);
+  opacity: 1;
 }
