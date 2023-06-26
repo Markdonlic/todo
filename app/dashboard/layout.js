@@ -78,7 +78,7 @@ export default function DashboardLayout({ children }) {
             </div>
           </div>
         </div> */}
-        <div className={`${openArch ? "w-[200px]" : "w-[54px]"} flex z-30`}>
+        <div className={`${openArch ? "w-[212px]" : "w-[66px]"} flex z-30 sticky bottom-0`}>
           <div className="flex flex-col w-fit justify-between pt-[6rem] pb-4 fixed overflow-auto top-0 left-0 h-screen px-2 text-2xl bg-white">
             <div className="flex flex-col items-start font-mono">
               <Link href="/dashboard/" className="flex w-full gap-4 items-center rounded-lg p-2 border-2 border-transparent hover:border-2 hover:border-sky-700 hover:bg-transparent hover:text-sky-700 hover:font-bold transition-all duration-500 cursor-pointer">
