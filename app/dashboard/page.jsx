@@ -7,7 +7,7 @@ import { CiHome } from "react-icons/ci";
 export default function page() {
   return (
     <div className="w-full mx-auto font-mono">
-      <div className="flex w-full flex-col gap-4 px-4 pt-2">
+      <div className="flex w-full flex-col gap-4 pl-4 pr-2 pt-2">
         <PageMenu title="tasks" icon={<CiHome />} sort group />
         <AddTask />
         <TaskNotification />

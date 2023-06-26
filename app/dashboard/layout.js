@@ -122,11 +122,6 @@ export default function DashboardLayout({ children }) {
           <div className="h-[5rem] w-full bg-white"></div>
           <div className="pb-[4rem]">{children}</div>
           <div className="h-[3rem] w-full z-20 flex sm:gap-10 items-center fixed bottom-0 left-0 bg-white text-sm flex-wrap sm:flex-none tracking-widest font-mono justify-end px-2 sm:px-0 text-gray-500">
-            <div className="w-[56px]"></div>
-            <div className="flex flex-1 sm:flex-none gap-4">
-              <Link href="#">Privacy Policy</Link>
-              <Link href="#">Terms of Use</Link>
-            </div>
             <div className="">2023&copy; MpcTodo</div>
           </div>
         </div>
