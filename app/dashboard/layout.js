@@ -40,9 +40,9 @@ export default function DashboardLayout({ children }) {
           <CiUser />
         </button>
         <div className={`${open ? "flex" : "hidden"} bg-white fixed top-16 right-5 p-4 text-sm sm:text-base flex-col gap-2 items-start justify-center drop-shadow-2xl text-sky-950 transition-all duration-500`}>
-          <Link href="#" className="hover:text-sky-600 transition-all duration-500">Profile</Link>
-          <Link href="#" className="hover:text-sky-600 transition-all duration-500">Settings</Link>
-          <Link href="#" className="hover:text-sky-600 transition-all duration-500">Log-out</Link>
+          <Link onClick={() => setOpen(false)} href="#" className="hover:text-sky-600 transition-all duration-500">Profile</Link>
+          <Link onClick={() => setOpen(false)} href="#" className="hover:text-sky-600 transition-all duration-500">Settings</Link>
+          <Link onClick={() => setOpen(false)} href="#" className="hover:text-sky-600 transition-all duration-500">Log-out</Link>
         </div>
       </div>
       <div className=" flex gap-4 min-h-screen">
