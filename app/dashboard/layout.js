@@ -25,7 +25,7 @@ export default function DashboardLayout({ children }) {
     <>
       <div className="h-[5rem] flex z-40 w-full fixed top-0 items-center justify-between bg-white text-xl p-4">
         <div className="flex items-center gap-4">
-          <button onClick={() => setOpenArch(!openArch)} className="rounded-lg p-2 border-2 bg-sky-950 text-white border-transparent hover:border-2 hover:border-sky-700 hover:bg-transparent hover:text-sky-700 hover:font-bold transition-all duration-500 cursor-pointer font-bold">
+          <button onClick={() => setOpenArch(!openArch)} className="sm:hidden rounded-lg p-2 border-2 bg-sky-950 text-white border-transparent hover:border-2 hover:border-sky-700 hover:bg-transparent hover:text-sky-700 hover:font-bold transition-all duration-500 cursor-pointer font-bold">
             <AiOutlineMenu />
           </button>
           <div className="lg:text-2xl text-xl uppercase font-semibold font-mono">Todo</div>
@@ -46,74 +46,42 @@ export default function DashboardLayout({ children }) {
         </div>
       </div>
       <div className="flex justify-start z-30">
-       {/*  <div className="hidden z-30 w-[4rem] mx-auto">
-          <div className="flex w-fit flex-col justify-between items-center pt-[5rem] pb-4 fixed overflow-auto top-0 left-0 h-screen text-3xl bg-white">
-            <div className="flex flex-col items-center">
-              <Link href="/dashboard" className="rounded-lg p-2 border-2 border-transparent hover:border-2 hover:border-sky-700 hover:bg-transparent hover:text-sky-700 hover:font-bold transition-all duration-500 cursor-pointer">
-                <CiHome />
-              </Link>
-              <Link href="/dashboard/today" className="rounded-lg p-2 border-2 border-transparent hover:border-2 hover:border-sky-700 hover:bg-transparent hover:text-sky-700 hover:font-bold transition-all duration-500 cursor-pointer">
-                <CiBrightnessUp />
-              </Link>
-              <Link href="/dashboard/important" className="rounded-lg p-2 border-2 border-transparent hover:border-2 hover:border-sky-700 hover:bg-transparent hover:text-sky-700 hover:font-bold transition-all duration-500 cursor-pointer">
-                <AiOutlineStar />
-              </Link>
-              <Link href="/dashboard/planned" className="rounded-lg p-2 border-2 border-transparent hover:border-2 hover:border-sky-700 hover:bg-transparent hover:text-sky-700 hover:font-bold transition-all duration-500 cursor-pointer">
-                <CiViewList />
-              </Link>
-              <Link href="/dashboard/tags" className="rounded-lg p-2 border-2 border-transparent hover:border-2 hover:border-sky-700 hover:bg-transparent hover:text-sky-700 hover:font-bold transition-all duration-500 cursor-pointer">
-                <CiFolderOn />
-              </Link>
-              <Link href="/dashboard/bin" className="rounded-lg p-2 border-2 border-transparent hover:border-2 hover:border-sky-700 hover:bg-transparent hover:text-sky-700 hover:font-bold transition-all duration-500 cursor-pointer">
-                <AiOutlineDelete />
-              </Link>
-            </div>
-            <div className="flex flex-col items-center">
-              <div className="rounded-lg p-2 border-2 border-transparent hover:border-2 hover:border-sky-700 hover:bg-transparent hover:text-sky-700 hover:font-bold transition-all duration-500 cursor-pointer">
-                <CiUser />
-              </div>
-              <div className="rounded-lg p-2 border-2 border-transparent hover:border-2 hover:border-sky-700 hover:bg-transparent hover:text-sky-700 hover:font-bold transition-all duration-500 cursor-pointer">
-                <CiSettings />
-              </div>
-            </div>
-          </div>
-        </div> */}
-        <div className={`${openArch ? "w-[212px]" : "w-[66px]"} flex z-30 sticky bottom-0`}>
-          <div className="flex flex-col w-fit justify-between pt-[6rem] pb-4 fixed overflow-auto top-0 left-0 h-screen px-2 text-2xl bg-white">
+        <div className={`${openArch ? "translate-x-0" : "-translate-x-[218px]"} flex z-30 transition-all ease-in-out duration-500`}>
+          <div className="flex flex-col w-fit justify-between pt-[6rem] pb-4 fixed overflow-auto top-0 left-0 drop-shadow-2xl h-screen px-2 text-2xl bg-white">
             <div className="flex flex-col items-start font-mono">
               <Link href="/dashboard/" className="flex w-full gap-4 items-center rounded-lg p-2 border-2 border-transparent hover:border-2 hover:border-sky-700 hover:bg-transparent hover:text-sky-700 hover:font-bold transition-all duration-500 cursor-pointer">
                 <CiHome className="" />
-                <p className={`${openArch ? "block" : "hidden"} text-[15px] sm:text-xl`}>Tasks</p>
+                <p className={`text-[15px] sm:text-xl sm:block`}>Tasks</p>
               </Link>
               <Link href="/dashboard/today" className="flex w-full gap-4 items-center rounded-lg p-2 border-2 border-transparent hover:border-2 hover:border-sky-700 hover:bg-transparent hover:text-sky-700 hover:font-bold transition-all duration-500 cursor-pointer">
                 <CiBrightnessUp />
-                <p className={`${openArch ? "block" : "hidden"} text-[15px] sm:text-xl`}>Today</p>
+                <p className={`text-[15px] sm:text-xl sm:block`}>Today</p>
               </Link>
               <Link href="/dashboard/important" className="flex w-full gap-4 items-center rounded-lg p-2 border-2 border-transparent hover:border-2 hover:border-sky-700 hover:bg-transparent hover:text-sky-700 hover:font-bold transition-all duration-500 cursor-pointer">
                 <AiOutlineStar />
-                <p className={`${openArch ? "block" : "hidden"} text-[15px] sm:text-xl`}>Important</p>
+                <p className={`text-[15px] sm:text-xl sm:block`}>Important</p>
               </Link>
               <Link href="/dashboard/planned" className="flex w-full gap-4 items-center rounded-lg p-2 border-2 border-transparent hover:border-2 hover:border-sky-700 hover:bg-transparent hover:text-sky-700 hover:font-bold transition-all duration-500 cursor-pointer">
                 <CiViewList />
-                <p className={`${openArch ? "block" : "hidden"} text-[15px] sm:text-xl`}>Planned</p>
+                <p className={`text-[15px] sm:text-xl sm:block`}>Planned</p>
               </Link>
               <Link href="/dashboard/tags" className="flex w-full gap-4 items-center rounded-lg p-2 border-2 border-transparent hover:border-2 hover:border-sky-700 hover:bg-transparent hover:text-sky-700 hover:font-bold transition-all duration-500 cursor-pointer">
                 <CiFolderOn />
-                <p className={`${openArch ? "block" : "hidden"} text-[15px] sm:text-xl`}>Groups</p>
+                <p className={`text-[15px] sm:text-xl sm:block`}>Groups</p>
               </Link>
               <Link href="/dashboard/bin" className="flex w-full gap-4 items-center rounded-lg p-2 border-2 border-transparent hover:border-2 hover:border-sky-700 hover:bg-transparent hover:text-sky-700 hover:font-bold transition-all duration-500 cursor-pointer">
                 <AiOutlineDelete />
-                <p className={`${openArch ? "block" : "hidden"} text-[15px] sm:text-xl`}>Trash</p>
+                <p className={`text-[15px] sm:text-xl sm:block`}>Trash</p>
               </Link>
             </div>
             <div className="flex flex-col items-start font-mono">
               <Link href="/dashboard/profile" className="flex w-full gap-4 items-center rounded-lg p-2 border-2 border-transparent hover:border-2 hover:border-sky-700 hover:bg-transparent hover:text-sky-700 hover:font-bold transition-all duration-500 cursor-pointer">
                 <CiUser />
-                <p className={`${openArch ? "block" : "hidden"} text-[15px] sm:text-xl`}>Profile</p>
+                <p className={`text-[15px] sm:text-xl sm:block`}>Profile</p>
               </Link>
               <Link href="/dashboard/settings" className="flex w-full gap-4 items-center rounded-lg p-2 border-2 border-transparent hover:border-2 hover:border-sky-700 hover:bg-transparent hover:text-sky-700 hover:font-bold transition-all duration-500 cursor-pointer">
                 <CiSettings />
-                <p className={`${openArch ? "block" : "hidden"} text-[15px] sm:text-xl`}>Settings</p>
+                <p className={`text-[15px] sm:text-xl sm:block`}>Settings</p>
               </Link>
             </div>
           </div>
