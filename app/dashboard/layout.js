@@ -46,8 +46,8 @@ export default function DashboardLayout({ children }) {
         </div>
       </div>
       <div className="flex justify-start z-30">
-        <div className={`${openArch ? "translate-x-0" : "-translate-x-[218px]"} flex z-30 transition-all ease-in-out duration-500`}>
-          <div className="flex flex-col w-fit justify-between pt-[6rem] pb-4 fixed overflow-auto top-0 left-0 drop-shadow-2xl h-screen px-2 text-2xl bg-white">
+        <div className={`${openArch ? "translate-x-0 sm:w-[218px]" : "-translate-x-[218px] sm:translate-x-0 sm:w-[218px]"} flex z-30 transition-all ease-in-out duration-500 min-h-screen`}>
+          <div className="flex flex-col w-fit justify-between pt-[6rem] pb-4 fixed overflow-auto top-0 left-0 sm:drop-shadow-none drop-shadow-2xl px-2 text-2xl bg-white h-full">
             <div className="flex flex-col items-start font-mono">
               <Link href="/dashboard/" className="flex w-full gap-4 items-center rounded-lg p-2 border-2 border-transparent hover:border-2 hover:border-sky-700 hover:bg-transparent hover:text-sky-700 hover:font-bold transition-all duration-500 cursor-pointer">
                 <CiHome className="" />
