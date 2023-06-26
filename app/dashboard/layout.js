@@ -45,9 +45,11 @@ export default function DashboardLayout({ children }) {
           <Link href="#" className="hover:text-sky-600 transition-all duration-500">Log-out</Link>
         </div>
       </div>
-      <div className="flex min-h-screen w-full ">
-        <div className={`${openArch ? "translate-x-0 sm:w-[218px]" : "-translate-x-[218px] sm:translate-x-0 sm:w-[218px] w-0"} z-30 transition-all ease-in-out duration-500 sticky top-[5rem] h-full`}>
-          <div className="sticky top-[5rem] pt-4 flex flex-col gap-4 justify-between text-2xl bg-white dashboard_layout2 overflow-auto">
+      <div className=" flex gap-4 min-h-screen">
+        <div className={`hidden sm:block sm:w-[238px] h-screen`}>
+        </div>
+        <div className={`${openArch ? "translate-x-0" : "-translate-x-[218px] w-0"} transition-all ease-in-out duration-500 fixed top-0 left-0 h-full z-40 sm:translate-x-0 sm:w-[200px]`}>
+          <div className="sticky top-[5rem] pt-[6rem] flex flex-col gap-4 justify-between text-2xl  h-full overflow-auto pb-4 bg-white px-4">
             <div className="flex z-40 flex-col items-start font-mono">
               <Link href="/dashboard/" className="flex w-full gap-4 items-center rounded-lg p-2 border-2 border-transparent hover:border-2 hover:border-sky-700 hover:bg-transparent hover:text-sky-700 hover:font-bold transition-all duration-500 cursor-pointer">
                 <CiHome className="" />
@@ -88,7 +90,7 @@ export default function DashboardLayout({ children }) {
         </div>
         <div className="sm:dashboard_layout w-full px-2">
           <div className="h-[5rem] w-full bg-white"></div>
-          <div className="pb-[4rem] w-full">{children}</div>
+          <div className="w-full">{children}</div>
           <div className="h-[3rem] w-full z-20 flex sm:gap-10 items-center fixed bottom-0 left-0 bg-white text-sm flex-wrap sm:flex-none tracking-widest font-mono justify-end px-2 sm:px-0 text-gray-500">
             <div className="">2023&copy; MpcTodo</div>
           </div>
