@@ -29,6 +29,13 @@ body {
   background-color: rgb(243, 244, 246);
   opacity: 1;
 }
+table {
+  width: 100%;
+}
+td {
+  padding: 7px 0px 7px 0px;
+  text-transform: capitalize;
+}
 
 .dashboard_layout {
   width: calc(100% - 218px);

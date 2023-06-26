@@ -40,8 +40,8 @@ export default function DashboardLayout({ children }) {
           <CiUser />
         </button>
         <div className={`${open ? "flex" : "hidden"} bg-white fixed top-16 right-5 p-4 text-sm sm:text-base flex-col gap-2 items-start justify-center drop-shadow-2xl text-sky-950 transition-all duration-500`}>
-          <Link onClick={() => setOpen(false)} href="#" className="hover:text-sky-600 transition-all duration-500">Profile</Link>
-          <Link onClick={() => setOpen(false)} href="#" className="hover:text-sky-600 transition-all duration-500">Settings</Link>
+          <Link onClick={() => setOpen(false)} href="/dashboard/profile" className="hover:text-sky-600 transition-all duration-500">Profile</Link>
+          <Link onClick={() => setOpen(false)} href="/dashboard/settings" className="hover:text-sky-600 transition-all duration-500">Settings</Link>
           <Link onClick={() => setOpen(false)} href="#" className="hover:text-sky-600 transition-all duration-500">Log-out</Link>
         </div>
       </div>
@@ -90,7 +90,9 @@ export default function DashboardLayout({ children }) {
         </div>
         <div className="sm:dashboard_layout w-full px-2">
           <div className="h-[5rem] w-full bg-white"></div>
-          <div className="w-full">{children}</div>
+          <div className="w-full">{children}
+            <div className="h-[3rem]"></div>
+          </div>
           <div className="h-[3rem] w-full z-20 flex sm:gap-10 items-center fixed bottom-0 left-0 bg-white text-sm flex-wrap sm:flex-none tracking-widest font-mono justify-end px-2 sm:px-0 text-gray-500">
             <div className="">2023&copy; MpcTodo</div>
           </div>
