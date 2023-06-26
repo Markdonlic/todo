@@ -51,37 +51,37 @@ export default function DashboardLayout({ children }) {
         <div className={`${openArch ? "translate-x-0" : "-translate-x-[218px] w-0"} transition-all ease-in-out duration-500 fixed top-0 left-0 h-full z-40 sm:translate-x-0 sm:w-[200px]`}>
           <div className="sticky top-[5rem] pt-[6rem] flex flex-col gap-4 justify-between text-2xl  h-full overflow-auto pb-4 bg-white px-4">
             <div className="flex z-40 flex-col items-start font-mono">
-              <Link href="/dashboard/" className="flex w-full gap-4 items-center rounded-lg p-2 border-2 border-transparent hover:border-2 hover:border-sky-700 hover:bg-transparent hover:text-sky-700 hover:font-bold transition-all duration-500 cursor-pointer">
+              <Link onClick={() => setOpenArch(false)} href="/dashboard/" className="flex w-full gap-4 items-center rounded-lg p-2 border-2 border-transparent hover:border-2 hover:border-sky-700 hover:bg-transparent hover:text-sky-700 hover:font-bold transition-all duration-500 cursor-pointer">
                 <CiHome className="" />
                 <p className={`text-[15px] sm:text-xl sm:block`}>Tasks</p>
               </Link>
-              <Link href="/dashboard/today" className="flex w-full gap-4 items-center rounded-lg p-2 border-2 border-transparent hover:border-2 hover:border-sky-700 hover:bg-transparent hover:text-sky-700 hover:font-bold transition-all duration-500 cursor-pointer">
+              <Link onClick={() => setOpenArch(false)} href="/dashboard/today" className="flex w-full gap-4 items-center rounded-lg p-2 border-2 border-transparent hover:border-2 hover:border-sky-700 hover:bg-transparent hover:text-sky-700 hover:font-bold transition-all duration-500 cursor-pointer">
                 <CiBrightnessUp />
                 <p className={`text-[15px] sm:text-xl sm:block`}>Today</p>
               </Link>
-              <Link href="/dashboard/important" className="flex w-full gap-4 items-center rounded-lg p-2 border-2 border-transparent hover:border-2 hover:border-sky-700 hover:bg-transparent hover:text-sky-700 hover:font-bold transition-all duration-500 cursor-pointer">
+              <Link onClick={() => setOpenArch(false)} href="/dashboard/important" className="flex w-full gap-4 items-center rounded-lg p-2 border-2 border-transparent hover:border-2 hover:border-sky-700 hover:bg-transparent hover:text-sky-700 hover:font-bold transition-all duration-500 cursor-pointer">
                 <AiOutlineStar />
                 <p className={`text-[15px] sm:text-xl sm:block`}>Important</p>
               </Link>
-              <Link href="/dashboard/planned" className="flex w-full gap-4 items-center rounded-lg p-2 border-2 border-transparent hover:border-2 hover:border-sky-700 hover:bg-transparent hover:text-sky-700 hover:font-bold transition-all duration-500 cursor-pointer">
+              <Link onClick={() => setOpenArch(false)} href="/dashboard/planned" className="flex w-full gap-4 items-center rounded-lg p-2 border-2 border-transparent hover:border-2 hover:border-sky-700 hover:bg-transparent hover:text-sky-700 hover:font-bold transition-all duration-500 cursor-pointer">
                 <CiViewList />
                 <p className={`text-[15px] sm:text-xl sm:block`}>Planned</p>
               </Link>
-              <Link href="/dashboard/tags" className="flex w-full gap-4 items-center rounded-lg p-2 border-2 border-transparent hover:border-2 hover:border-sky-700 hover:bg-transparent hover:text-sky-700 hover:font-bold transition-all duration-500 cursor-pointer">
+              <Link onClick={() => setOpenArch(false)} href="/dashboard/tags" className="flex w-full gap-4 items-center rounded-lg p-2 border-2 border-transparent hover:border-2 hover:border-sky-700 hover:bg-transparent hover:text-sky-700 hover:font-bold transition-all duration-500 cursor-pointer">
                 <CiFolderOn />
                 <p className={`text-[15px] sm:text-xl sm:block`}>Groups</p>
               </Link>
-              <Link href="/dashboard/bin" className="flex w-full gap-4 items-center rounded-lg p-2 border-2 border-transparent hover:border-2 hover:border-sky-700 hover:bg-transparent hover:text-sky-700 hover:font-bold transition-all duration-500 cursor-pointer">
+              <Link onClick={() => setOpenArch(false)} href="/dashboard/bin" className="flex w-full gap-4 items-center rounded-lg p-2 border-2 border-transparent hover:border-2 hover:border-sky-700 hover:bg-transparent hover:text-sky-700 hover:font-bold transition-all duration-500 cursor-pointer">
                 <AiOutlineDelete />
                 <p className={`text-[15px] sm:text-xl sm:block`}>Trash</p>
               </Link>
             </div>
             <div className="flex flex-col items-start font-mono">
-              <Link href="/dashboard/profile" className="flex w-full gap-4 items-center rounded-lg p-2 border-2 border-transparent hover:border-2 hover:border-sky-700 hover:bg-transparent hover:text-sky-700 hover:font-bold transition-all duration-500 cursor-pointer">
+              <Link onClick={() => setOpenArch(false)} href="/dashboard/profile" className="flex w-full gap-4 items-center rounded-lg p-2 border-2 border-transparent hover:border-2 hover:border-sky-700 hover:bg-transparent hover:text-sky-700 hover:font-bold transition-all duration-500 cursor-pointer">
                 <CiUser />
                 <p className={`text-[15px] sm:text-xl sm:block`}>Profile</p>
               </Link>
-              <Link href="/dashboard/settings" className="flex w-full gap-4 items-center rounded-lg p-2 border-2 border-transparent hover:border-2 hover:border-sky-700 hover:bg-transparent hover:text-sky-700 hover:font-bold transition-all duration-500 cursor-pointer">
+              <Link onClick={() => setOpenArch(false)} href="/dashboard/settings" className="flex w-full gap-4 items-center rounded-lg p-2 border-2 border-transparent hover:border-2 hover:border-sky-700 hover:bg-transparent hover:text-sky-700 hover:font-bold transition-all duration-500 cursor-pointer">
                 <CiSettings />
                 <p className={`text-[15px] sm:text-xl sm:block`}>Settings</p>
               </Link>
