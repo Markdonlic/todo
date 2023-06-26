@@ -46,7 +46,7 @@ export default function DashboardLayout({ children }) {
         </div>
       </div>
       <div className="flex min-h-screen w-full ">
-        <div className={`${openArch ? "px-2 translate-x-0 sm:w-[218px]" : "-translate-x-[218px] sm:translate-x-0 sm:w-[218px] w-0 px-2"} z-30 transition-all ease-in-out duration-500 sticky top-[5rem] h-full`}>
+        <div className={`${openArch ? "translate-x-0 sm:w-[218px]" : "-translate-x-[218px] sm:translate-x-0 sm:w-[218px] w-0"} z-30 transition-all ease-in-out duration-500 sticky top-[5rem] h-full`}>
           <div className="sticky top-[5rem] pt-4 flex flex-col gap-4 justify-between text-2xl bg-white dashboard_layout2 overflow-auto">
             <div className="flex z-40 flex-col items-start font-mono">
               <Link href="/dashboard/" className="flex w-full gap-4 items-center rounded-lg p-2 border-2 border-transparent hover:border-2 hover:border-sky-700 hover:bg-transparent hover:text-sky-700 hover:font-bold transition-all duration-500 cursor-pointer">
@@ -86,7 +86,7 @@ export default function DashboardLayout({ children }) {
             </div>
           </div>
         </div>
-        <div className="sm:dashboard_layout w-full">
+        <div className="sm:dashboard_layout w-full px-2">
           <div className="h-[5rem] w-full bg-white"></div>
           <div className="pb-[4rem] w-full">{children}</div>
           <div className="h-[3rem] w-full z-20 flex sm:gap-10 items-center fixed bottom-0 left-0 bg-white text-sm flex-wrap sm:flex-none tracking-widest font-mono justify-end px-2 sm:px-0 text-gray-500">
