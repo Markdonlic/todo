@@ -6,7 +6,7 @@ import { CiBrightnessUp } from "react-icons/ci";
 
 export default function page() {
   return (
-    <div className="w-full mx-auto">
+    <div className="w-full mx-auto font-mono">
         <PageMenu title="my day" icon={<CiBrightnessUp />} sort group suggestion />
       <div className="px-4 pt-2 flex w-full flex-col gap-4">
         <AddTask />
