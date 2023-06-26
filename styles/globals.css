@@ -29,3 +29,12 @@ body {
   background-color: rgb(243, 244, 246);
   opacity: 1;
 }
+
+.dashboard_layout {
+  width: calc(100% - 218px);
+  padding: 0px 8px;
+}
+
+.dashboard_layout2 {
+  height: calc(100vh - 5rem);
+}
