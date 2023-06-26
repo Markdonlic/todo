@@ -101,9 +101,9 @@ export default function DashboardLayout({ children }) {
                 <CiFolderOn />
                 <p className={`${openArch ? "block" : "hidden"} text-[15px] sm:text-xl`}>Groups</p>
               </Link>
-              <Link href="/dashboard/delete" className="flex w-full gap-4 items-center rounded-lg p-2 border-2 border-transparent hover:border-2 hover:border-sky-700 hover:bg-transparent hover:text-sky-700 hover:font-bold transition-all duration-500 cursor-pointer">
+              <Link href="/dashboard/bin" className="flex w-full gap-4 items-center rounded-lg p-2 border-2 border-transparent hover:border-2 hover:border-sky-700 hover:bg-transparent hover:text-sky-700 hover:font-bold transition-all duration-500 cursor-pointer">
                 <AiOutlineDelete />
-                <p className={`${openArch ? "block" : "hidden"} text-[15px] sm:text-xl`}>Bin</p>
+                <p className={`${openArch ? "block" : "hidden"} text-[15px] sm:text-xl`}>Trash</p>
               </Link>
             </div>
             <div className="flex flex-col items-start font-mono">

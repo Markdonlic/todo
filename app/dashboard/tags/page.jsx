@@ -63,7 +63,7 @@ const taskItems = [
   }
 ];
   return (
-    <div className="w-full mx-auto">
+    <div className="w-full mx-auto font-mono">
         <PageMenu title="Tags" icon={<CiFolderOn />} />
       <div className="flex w-full px-4 pt-2 flex-col gap-4">
         <Folder name="tags" data={taskItems[0]} />
